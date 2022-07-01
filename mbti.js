@@ -16,11 +16,23 @@ const q = {
 };
 
 const result = {
-    "ISTJ" : {"animal": "하마","explain":"하마설명","img":"./image/lion.jpg"},
+    "INFP" : {"animal": "하마","explain":"하마설명","img":"./image/hippo.jpg"},
     "ENFP" : {"animal": "사자","explain":"사자설명","img":"./image/lion.jpg"},
-    "ENTJ" : {"animal": "기린","explain":"기린설명","img":"./image/lion.jpg"},
-    "INFJ" : {"animal": "토끼","explain":"토끼설명","img":"./image/lion.jpg"},
-}
+    "ENTJ" : {"animal": "기린","explain":"기린설명","img":"./image/giraffe.jpg"},
+    "INFJ" : {"animal": "토끼","explain":"토끼설명","img":"./image/rabbitt.jpg"},
+    "ISTP" : {"animal": "물소","explain":"물소설명","img":"./image/buffalo.jpg"},
+    "ENFJ" : {"animal": "여우","explain":"여우설명","img":"./image/mammals.jpg"},
+    "ENTP" : {"animal": "곰","explain":"곰설명","img":"./image/bear.jpg"},
+    "ISTJ" : {"animal": "엥심이","explain":"엥심이는 내가 엥이 싫다고해서 나온 대안이지롱","img":"./image/rabbit.jpg"},
+    "ISFP" : {"animal": "치타","explain":"치타설명","img":"./image/cheeta.jpg"},
+    "ENTP" : {"animal": "멋쟁이사자","explain":"멋쟁이사자설명","img":"./image/goodlion.jpg"},
+    "ESFJ" : {"animal": "호랑이","explain":"호랑이설명","img":"./image/tiger.jpg"},
+    "INTJ" : {"animal": "개구리","explain":"개구리설명","img":"./image/frog.jpg"},
+    "ISFJ" : {"animal": "고양이","explain":"고양이설명","img":"./image/hongsi.jpg"},
+    "ESFP" : {"animal": "개","explain":"개설명","img":"./image/dog.jpg"},
+    "ESTJ" : {"animal": "악어","explain":"악어설명","img":"./image/alli.jpg"},
+    "INTJ" : {"animal": "사슴","explain":"사슴설명","img":"./image/deer.jpg"},
+};
 
 const answerValueA = document.querySelector('#A');
 const answerValueB = document.querySelector('#B');
@@ -69,7 +81,7 @@ function next(){
         (JPvalue<2) ? mbti+="P" : mbti+="J";
 
         const resultImg = document.querySelector('#img');
-        resultImg.style.src = result[mbti]["img"];
+        resultImg.src = result[mbti]["img"];
         const resultAnimal = document.querySelector('#animal');
         resultAnimal.innerHTML = result[mbti]["animal"];
         const resultExplain = document.querySelector('#explain');
